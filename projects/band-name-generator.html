@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Band Name Generator | Raymond</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body class="demo-body">
+    <main class="demo-shell">
+      <a class="back-link" href="../projects.html">← Back to projects</a
+      ><span class="section-kicker">PYTHON PRACTICE / PROJECT </span>
+      <h1>Band Name<br /><em>Generator</em></h1>
+      <p class="lead">
+        A small interactive version of the beginner Python project. Choose a
+        mood and generate a band name.
+      </p>
+      <section class="demo-panel">
+        <label for="mood">Choose a mood</label
+        ><select id="mood">
+          <option value="all">Surprise me</option>
+          <option value="indie">Indie</option>
+          <option value="afro">Afro-fusion</option>
+          <option value="rock">Rock</option>
+          <option value="dream">Dreamy</option></select
+        ><button class="button button-lime" id="generate">
+          Generate a name ↗
+        </button>
+        <div class="generated-name" id="generated-name" aria-live="polite">
+          YOUR NEXT BAND NAME
+        </div>
+        <button class="text-link" id="copy-name">Copy name</button>
+      </section>
+      <p class="demo-explain">
+        The original project was programmed as a beginner Python script. This
+        browser demo.
+      </p>
+    </main>
+    <script src="../assets/main.js"></script>
+  </body>
+</html>

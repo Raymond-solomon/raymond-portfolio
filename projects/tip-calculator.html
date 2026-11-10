@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tip Calculator | Raymond</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body class="demo-body">
+    <main class="demo-shell">
+      <a class="back-link" href="../projects.html">← Back to projects</a
+      ><span class="section-kicker">PYTHON PRACTICE</span>
+      <h1>Tip<br /><em>Calculator</em></h1>
+      <p class="lead">
+        Work out the tip, total bill and amount each person should pay.
+      </p>
+      <section class="demo-panel calculator">
+        <label for="bill"
+          >Bill amount (₦)<input
+            id="bill"
+            type="number"
+            min="0"
+            step="0.01"
+            placeholder="e.g. 25000" /></label
+        ><label for="tip"
+          >Tip percentage<select id="tip">
+            <option value="5">5%</option>
+            <option value="10" selected>10%</option>
+            <option value="12">12%</option>
+            <option value="15">15%</option>
+            <option value="20">20%</option>
+          </select></label
+        ><label for="people"
+          >Number of people<input
+            id="people"
+            type="number"
+            min="1"
+            step="1"
+            value="1" /></label
+        ><button class="button button-lime" id="calculate">Calculate ↗</button>
+        <div class="calc-results" aria-live="polite">
+          <div><small>TIP AMOUNT</small><b id="tip-result">₦0.00</b></div>
+          <div><small>TOTAL BILL</small><b id="total-result">₦0.00</b></div>
+          <div class="result-total">
+            <small>EACH PERSON PAYS</small><b id="each-result">₦0.00</b>
+          </div>
+        </div>
+        <p class="error-message" id="calc-error" role="alert"></p>
+      </section>
+      <p class="demo-explain">
+        The original project was created as a beginner Python calculator. This
+        web version demonstrates the same calculation in the browser.
+      </p>
+    </main>
+    <script src="../assets/main.js"></script>
+  </body>
+</html>

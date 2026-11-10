@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Academic Planner | Raymond Solomon Bwode</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Silkscreen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark">R.</span
+          ><span>RAYMOND<br /><small>SOLOMON BWODE</small></span></a
+        ><button
+          class="menu-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <nav class="nav">
+          <a href="index.html">Home</a><a href="about.html">About</a
+          ><a href="projects.html">Projects</a><a href="contact.html">Contact</a
+          ><a class="active" href="planner.html">Academic Planner</a>
+        </nav>
+      </header>
+      <main class="planner-page">
+        <section class="planner-intro">
+          <span class="section-kicker">PERSONAL WORKSPACE</span>
+          <h1>Academic<br /><em>Planner</em></h1>
+          <p>Plan your tasks and keep track of your progress.</p>
+          <div class="planner-art">
+            <div class="calendar-art">
+              <span>MON</span><b>+</b><i>✓</i><i>✓</i><i></i><i>✓</i
+              ><small>PLAN / PRACTISE / GROW</small>
+            </div>
+            <span class="spark">✦</span>
+          </div>
+        </section>
+        <section class="planner-board">
+          <div class="planner-top">
+            <div>
+              <span class="section-kicker">YOUR TASK LIST</span>
+              <h2>Make room for progress.</h2>
+            </div>
+            <span class="local-label">SAVED ON THIS DEVICE</span>
+          </div>
+          <form id="task-form" class="task-entry">
+            <input
+              id="task-input"
+              maxlength="100"
+              required
+              placeholder="Add a new task..."
+              aria-label="New task"
+            /><button class="button button-lime" type="submit">
+              Add Task <span>＋</span>
+            </button>
+          </form>
+          <div class="task-filters">
+            <button class="filter active" data-filter="all">All</button
+            ><button class="filter" data-filter="pending">Pending</button
+            ><button class="filter" data-filter="completed">Completed</button>
+          </div>
+          <ul id="task-list" class="task-list"></ul>
+          <p id="task-empty" class="empty-state">
+            No tasks here yet. Add one above to get started.
+          </p>
+          <p class="planner-note">
+            Your tasks are stored in this browser on this device. Clearing
+            browser data may remove them.
+          </p>
+        </section>
+      </main>
+      <footer class="footer">
+        <span
+          >© <span data-year></span> Raymond Solomon Bwode. All rights
+          reserved.</span
+        ><a href="projects.html">Explore projects ↗</a
+        ><a href="index.html">Back to home ↑</a>
+      </footer>
+    </div>
+    <script src="assets/main.js"></script>
+  </body>
+</html>
